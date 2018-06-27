@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/main_bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@android:color/white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/main_index"
+                style="@style/main_buttom"
+                android:drawableTop="@drawable/radio_button_index"
+                android:text="@string/index" />
+
+            <RadioButton
+                android:id="@+id/main_eye"
+                style="@style/main_buttom"
+                android:drawableTop="@drawable/radio_button_eye"
+                android:text="@string/eye" />
+
+            <RadioButton
+                android:id="@+id/main_mine"
+                style="@style/main_buttom"
+                android:drawableTop="@drawable/radio_button_mine"
+                android:text="@string/mine" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_bottom_container">
+
+    </FrameLayout>
+</RelativeLayout>

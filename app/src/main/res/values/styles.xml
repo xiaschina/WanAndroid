@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="main_buttom">
+        <item name="android:layout_width">@dimen/dp_0</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/sp_10</item>
+        <item name="android:textColor">@drawable/radio_button_text</item>
+        <item name="android:drawablePadding">@dimen/dp_2</item>
+    </style>
+
+    <style name="progress_bar_style">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:background">@color/color_ea986c</item>
+        <item name="android:progressDrawable">@drawable/progressbar_horizonal</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:minHeight">@dimen/dp_2</item>
+        <item name="android:maxHeight">@dimen/dp_2</item>
+        <item name="android:mirrorForRtl">true</item>
+    </style>
+
+</resources>

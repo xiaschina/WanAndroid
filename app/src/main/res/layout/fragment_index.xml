@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><!--<layout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto">-->
+
+<!--<data>-->
+
+<!--<data type="com.bjhl.plugins.rxjava2.ui.fragment.Index.IndexItemViewModel"/>--><!--<variable--><!--name="viewModel"--><!--type="com.bjhl.plugins.rxjava2.ui.fragment.Index.IndexViewModel" />-->
+
+<!--<import type="me.tatarka.bindingcollectionadapter2.LayoutManagers" />--><!--</data>-->
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_scrollFlags="scroll">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.bjhl.plugins.android.base.RxRecyclerView
+        android:id="@+id/index_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/windowBackground"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <!--app:layoutManager="@{LayoutManagers.linear()}"-->
+    <!--app:itemBinding="@{viewModel.itemView}"-->
+    <!--app:items="@{viewModel.newList}"-->
+
+</android.support.design.widget.CoordinatorLayout><!--</layout>-->
